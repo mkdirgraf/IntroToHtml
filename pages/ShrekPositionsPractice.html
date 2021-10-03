@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Shrek</title>
+    <style>
+        .container>h1 {
+            text-shadow: rgb(85, 85, 180) 3px 3px;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: xx-large;
+            display: block;
+        }
+
+        .intro p::before {
+            content: '-';
+        }
+
+        .intro {
+            background-color: grey;
+            margin-bottom: 40px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            padding: 10px;
+        }
+
+        .header h1 {
+            color: white;
+            font-size: x-large;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .header {
+            background-color: black;
+            margin-top: 0px;
+            height: 100px;
+        }
+
+        .outerBox {
+            border: solid 2px black;
+            width: 100%;
+        }
+
+        .box1 {
+            border: solid 1px black;
+            height: 700px;
+            display: block;
+            overflow-y: scroll;
+            margin: 10px;
+
+        }
+
+        .mainMenu {
+            margin: 0;
+            top: 0;
+            position: sticky;
+            background-color: rgb(108, 108, 194);
+            height: 60px;
+            padding: 0;
+        }
+
+        .mainMenu li {
+            display: inline-block;
+            text-align: center;
+            width: 24%;
+            margin-top: 20px;
+        }
+
+        .mainMenu li a {
+            text-decoration: none;
+            padding: 10px 0;
+            color: black;
+        }
+
+        .content p {
+            margin: 15px 20px;
+            opacity: 0.5;
+        }
+
+       .container > pre {
+            opacity: 0.5;
+        }
+
+        .box2 {
+            width: 100%;
+            border: solid 2px black;
+        }
+
+        .innerBox2 {
+            border: solid 1px black;
+            margin: 20px 10px;
+            
+        }
+
+        .top {
+            border: solid 1px black;
+            margin: 10px 10px 40px 10px;
+        }
+
+        .top h1 {
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        .top p {
+            opacity: 0.5;
+            text-align: center;
+            font-size: x-small;
+        }
+
+        #main {
+            margin: 10px 10px;
+            width: 100%;
+            height: 500px;
+        }
+
+        .left {
+            width: 16%;
+            margin: 5px 10px;
+            float: left;
+        }
+
+        .firstRow,
+        .secondRow {
+            border: solid 1px black;
+            margin-bottom: 5px;
+            padding: 3px;
+        }
+
+        .centerText {
+            float: left;
+            width: 65%;
+            border: solid 1px black;
+            margin: 5px 10px;
+        }
+
+        .data li {
+            text-align: left;
+            padding: 5px;
+        }
+
+        .data li p {
+            text-align: left;
+            text-decoration: none;
+            opacity: 1;
+        }
+
+        .right {
+            float: left;
+            width: 14%;
+            margin: 5px 10px;
+        }
+
+        .firstRight  {
+            border: solid 1px black;
+            margin-bottom: 5px;
+        }
+        .secondRight {
+            border: solid 1px black;
+        }
+
+        .firstRight,
+        .secondRight p{
+            padding: 2px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: block;
+        }
+
+       #bottom {
+           border: solid 1px black;
+           margin: 20px 10px 50px 10px;
+           display: block;
+       }
+      
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><strong>Practice</strong></h1>
+        <div class="intro">
+            <p> Practices are located inside boxes below</p>
+            <p> Make sure you have the proper HTML structure (html, head, body, tags are all in place)</p>
+            <p> If some images are small to see. Open in new tab from your browser.</p>
+        </div>
+        <h2>Sticky menu</h2>
+        <pre>Hint: menu should stick when scrolling down the page</pre>
+        <div class="outerBox">
+            <div class="box1">
+                <div class="header">
+                    <h1>SkyZone Academy</h1>
+                </div>
+                <ul class="mainMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit blanditiis atque doloribus eius
+                        laborum? Fugiat molestiae aspernatur impedit autem aperiam doloremque et expedita suscipit
+                        eligendi,
+                        a recusandae eos dolore id pariatur tenetur, debitis, laboriosam minus. Aut quibusdam
+                        perspiciatis
+                        illum dignissimos quod. Consequuntur ipsa odit ipsam iure dicta sit nam temporibus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet enim hic suscipit in
+                        necessitatibus
+                        nam nihil quibusdam voluptas, pariatur ducimus. Praesentium, officia facilis, fuga perspiciatis
+                        consequatur voluptates laborum, libero nemo consectetur maxime aliquam? Perferendis laborum
+                        nobis
+                        aliquam eaque, repudiandae delectus! Quis illo a atque iste laudantium optio quae, veniam
+                        laborum
+                        molestias facere nostrum aliquid deserunt, nam corporis sint quas voluptas tempora cumque quia
+                        exercitationem explicabo voluptates id. Iste dicta, minus velit quidem dolorum consequuntur
+                        atque
+                        magni dolores delectus ratione expedita nobis odio, tempore enim labore ullam beatae repellendus
+                        quod ab doloremque aperiam corrupti architecto itaque! Aliquam cum repellendus veniam totam.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, ullam.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus reiciendis, eos
+                        voluptatum
+                        natus id non doloremque voluptatibus, praesentium quasi, aliquid odit quo voluptatem labore!
+                        Quasi,
+                        illum assumenda? Mollitia repellendus cumque, aperiam, illo quam quae dolorum animi suscipit,
+                        ducimus error quas obcaecati consequuntur dolor laudantium. Repudiandae placeat distinctio neque
+                        vitae minus illum quod maiores explicabo id quae facere ea eius animi repellat dolor fuga totam,
+                        a
+                        quaerat cupiditate, quos veritatis quis deleniti illo! Quo excepturi obcaecati commodi minima
+                        voluptatibus soluta officiis quasi ipsa, quos consequatur dolore quibusdam totam sunt harum!
+                        Impedit
+                        quia, possimus sequi quos molestias minus? Fugit quidem est sapiente repudiandae quam sed sit!
+                        Itaque, ex ratione perferendis suscipit doloremque quasi nisi exercitationem. Reprehenderit
+                        accusantium iure, laudantium, hic cupiditate numquam perferendis nisi expedita incidunt, amet
+                        rerum
+                        unde animi ratione voluptatum esse voluptatem dolorum! Autem ipsum, ea nobis distinctio sed
+                        vitae
+                        cum assumenda temporibus expedita aliquam eos, sit tenetur illo suscipit asperiores quasi
+                        molestias
+                        perferendis veritatis natus necessitatibus, provident voluptates quisquam ipsam dolorem! Rerum
+                        facere eveniet velit exercitationem nisi explicabo enim doloribus, aperiam ipsum cupiditate
+                        voluptatibus distinctio earum beatae ullam nostrum natus tenetur et eos ut non magnam. Inventore
+                        vero, nemo sint dignissimos asperiores ut, doloremque natus non pariatur vel temporibus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima rerum quod, quam similique
+                        harum. Adipisci dolore perferendis sunt optio consectetur tenetur dolorum, quos sit unde
+                        quibusdam
+                        laudantium ipsa explicabo officia sapiente eligendi alias molestiae cupiditate! Iusto minus
+                        sint,
+                        reiciendis provident, quam esse, totam tempore eligendi aspernatur laboriosam quasi consequatur.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque ea fugit explicabo corrupti
+                        dolore
+                        animi sapiente illo, quos natus nihil sit ratione. Distinctio culpa libero tempore aliquid magni
+                        earum officia sapiente, odit quasi laudantium soluta, perspiciatis in, optio deserunt facere
+                        nihil
+                        ab officiis! Reprehenderit cupiditate amet provident quis in quod debitis. Corrupti, sed!
+                        Pariatur
+                        unde animi repudiandae sunt veniam, qui, iure itaque corrupti quia rem explicabo, nesciunt
+                        deleniti
+                        optio vero tempora natus doloribus officiis quam? Cumque ipsa quibusdam animi adipisci! Voluptas
+                        beatae inventore culpa minus ratione explicabo tempore quod? Veritatis saepe maxime eum
+                        praesentium
+                        ipsa, odit culpa qui fugiat?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis laborum excepturi,
+                        praesentium
+                        omnis asperiores temporibus et ducimus officia nobis, optio dicta soluta eos quam. Laborum esse,
+                        provident temporibus expedita sit sapiente magni, officiis laboriosam, eligendi porro corrupti?
+                        Consequuntur eos tenetur, voluptates vero aperiam assumenda quam harum nobis illum ut quidem
+                        incidunt aspernatur quibusdam quis vitae adipisci, labore laudantium, sapiente expedita hic iste
+                        odio magni dolore? Consequuntur veritatis ea repellendus ipsa ducimus! Aliquid ullam quas
+                        incidunt
+                        commodi unde alias dignissimos omnis fuga perferendis, ut quisquam amet quibusdam ratione
+                        eveniet
+                        enim doloremque distinctio dolore officia, neque ipsa, numquam vitae nisi? Iusto nemo veniam
+                        assumenda qui sapiente magni ut consequuntur corrupti, vel cupiditate. Voluptates, ex ut,
+                        asperiores
+                        maxime cupiditate velit repudiandae qui doloremque architecto id voluptatem, nihil tempora. Et
+                        est
+                        sunt aspernatur saepe ducimus soluta, eveniet nisi, esse, dolor fugiat illo ab cupiditate
+                        obcaecati
+                        animi repellendus ullam? Quis vitae quisquam assumenda saepe blanditiis? Non sint accusamus
+                        laboriosam id velit animi neque. Quam quis exercitationem unde modi molestias officiis vero
+                        fugiat.
+                        Veniam ratione eligendi voluptate odit in aliquid quo debitis nostrum laborum velit ipsum porro
+                        provident suscipit perspiciatis quidem pariatur quam sint tenetur, possimus, incidunt
+                        consequuntur
+                        unde harum. Illo totam quaerat dicta at esse numquam ex praesentium neque est libero, aut
+                        aliquam
+                        quisquam repellendus ea. Ratione, reiciendis illo. Rem quaerat, possimus neque distinctio culpa
+                        eligendi voluptas molestiae officiis expedita sit quos optio iste hic non libero! Quos, porro?
+                        Repellendus, impedit quas perferendis eveniet hic eligendi eaque maxime dolores, odit corrupti
+                        consequatur ipsa? Et ducimus obcaecati alias id natus quam possimus error quo, assumenda quasi
+                        iusto
+                        eius expedita pariatur sint dolorem soluta illo voluptatem odit voluptates officiis sapiente
+                        iure
+                        nisi odio. Beatae, quia? Neque quaerat vel fugiat adipisci possimus excepturi sed, distinctio
+                        sequi
+                        vero architecto velit nostrum quidem nesciunt aliquid inventore a assumenda molestias eum?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, cum necessitatibus voluptates
+                        debitis eveniet soluta praesentium reprehenderit magnam. Velit illum corrupti pariatur
+                        asperiores
+                        totam nihil inventore, voluptates ad rem, quasi assumenda, ullam optio aliquid? In, quibusdam,
+                        reiciendis harum sed porro nihil excepturi delectus unde quaerat assumenda quia sapiente
+                        laudantium
+                        laborum asperiores ab repellendus et saepe hic deserunt veniam commodi, nulla odio modi
+                        doloremque.
+                        Magnam architecto id voluptatibus consequatur, at dicta beatae eos cupiditate modi pariatur
+                        dolor
+                        inventore, suscipit in explicabo reiciendis cum! Inventore ipsam ducimus repellendus impedit
+                        corporis aliquam autem nostrum expedita itaque laudantium rerum totam hic est quas, voluptatibus
+                        mollitia obcaecati excepturi veniam! Possimus neque modi aut et minima eos quod quisquam
+                        voluptatibus! Enim exercitationem distinctio ipsa odit impedit debitis. Tenetur reprehenderit
+                        consectetur a blanditiis excepturi cumque dicta expedita doloremque minus ratione? Incidunt
+                        rerum
+                        vitae similique pariatur cupiditate aliquid, unde quisquam, natus earum reprehenderit dolor
+                        distinctio esse placeat commodi expedita iste perspiciatis delectus at eius, et itaque? Ea
+                        excepturi
+                        facilis nulla, distinctio eaque similique delectus quae provident ratione animi. Aspernatur
+                        facilis
+                        iste vitae voluptas, voluptatem facere itaque! Quia, amet pariatur dolorum temporibus fugiat
+                        magni
+                        necessitatibus odit nulla et provident quaerat qui illum dolorem at libero culpa? Quo explicabo
+                        atque vel fugiat, eius nulla sequi earum, hic ut a commodi esse laborum? Alias, nam totam illum
+                        saepe repudiandae iusto, rerum omnis, necessitatibus soluta perferendis molestias incidunt. Amet
+                        ratione natus, quo consequuntur iure ab deleniti pariatur sapiente saepe numquam magnam in
+                        soluta!
+                        Eos possimus, corrupti maxime earum quasi facere quas impedit fuga recusandae esse, quisquam
+                        molestiae. Repellat ut optio ea cum animi, necessitatibus nihil corporis repudiandae. Nihil
+                        voluptatem dicta officia? Delectus dolores animi asperiores maiores dolor alias sequi veritatis
+                        ex
+                        aperiam aspernatur. Neque, repellat? Ipsum eos ducimus debitis veniam assumenda sint omnis quae
+                        voluptatibus harum? Cupiditate modi aperiam deleniti nihil repudiandae!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo nostrum beatae eveniet
+                        aliquam!
+                        Beatae veniam fugiat tempore, corporis placeat neque repellat nesciunt dolores molestiae,
+                        deleniti
+                        explicabo, hic harum reiciendis. Possimus, vero? Autem quas quae ipsam numquam impedit
+                        distinctio
+                        iste corporis inventore explicabo quia? Aut eveniet impedit temporibus voluptatibus quasi fugiat
+                        animi harum debitis, voluptates mollitia dignissimos sit qui tempore? Tempore praesentium
+                        repellat
+                        deserunt ratione quam, ab ipsum officiis cumque, quibusdam impedit quidem explicabo expedita
+                        voluptatibus fuga mollitia labore corporis blanditiis, cum aliquid. Iusto temporibus, suscipit
+                        neque
+                        atque animi delectus debitis quibusdam rem, aliquid, soluta nam sit quia culpa nemo molestiae?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eveniet sint saepe consequatur
+                        nihil quas iusto doloribus veritatis obcaecati dolorum earum autem consequuntur deserunt quasi
+                        beatae repellat, voluptatem dolores cupiditate iste. Aliquid non omnis ab vel, laboriosam
+                        delectus recusandae ad aliquam dolor esse debitis eveniet facilis officia aperiam amet natus
+                        ipsam culpa ipsum, repellat nam sunt suscipit animi voluptatibus expedita! Iusto ducimus maiores
+                        quae aperiam id voluptas consequatur earum voluptatem consectetur suscipit! Doloribus adipisci
+                        maiores cumque fugit fuga quasi at, veritatis aut obcaecati quibusdam dignissimos! Quidem
+                        ratione aut ipsam nisi ullam explicabo sunt, quisquam doloremque quibusdam reiciendis ipsum,
+                        natus consectetur.</p>
+                </div>
+
+            </div>
+        </div>
+        <h2>Mr Shrek</h2>
+        <pre>Hint: float</pre>
+        <pre>Hint: no limits, improve practices as needed </pre>
+        <div class="box2">
+            <div class="innerBox2">
+                <div class="top">
+                    <h1><strong>M. Shrek's philosophy of life</strong></h1>
+                    <p>Shrek (regally known as Sir Shrek) is the overall titular main protagonist of the Shrek
+                        franchise.</p>
+                    <p>He is Fiona's husband, Donkey and Puss' best friend, the ogre triplets' father, and the son in
+                        law of Queen Lillian and King Harold.</p>
+                </div>
+                <div id="main">
+                    <div class="left">
+                        <div class="firstRow">
+                            <h3>M. Shrek</h3>
+                            <img src="https://cdn.vox-cdn.com/thumbor/c2FahjsIZjgpvHLblhqPq72E3Zs=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/7906079/shrek.jpg"
+                                alt="Shrek" width="170px" height="150px">
+                        </div>
+                        <div class="secondRow">
+                            <p>This is just a CSS example. See the links to the right if you are interested in the
+                                subject.</p>
+                        </div>
+                    </div>
+                    <div class="centerText">
+                        <div class="textData">
+                            <ol class="data">
+                                <li><strong>Loves Everyone<br>
+                                        <p>Loves Everyone</p>
+                                    </strong></li>
+                                <li><strong>Fights Everyone<br>
+                                        <p>Fights Everyone</p>
+                                    </strong></li>
+                                <li><strong>Laughs often<br>
+                                        <p>Laughs often</p>
+                                    </strong></li>
+                                <li><strong>Sleeps all the time<br>
+                                        <p>Sleeps all the time</p>
+                                    </strong></li>
+                                <li><strong>Eats so much<br>
+                                        <p>Eats so much</p>
+                                    </strong></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="firstRight">
+                            <h2><strong>Appearance</strong></h2>
+                            <p style="padding: 5px">Shrek is a green rotund ogre with brown eyes and a bald head. He wears a white long
+                                sleeved tunic within his brown turtle designed mini vest, brown pinstriped pants and
+                                dark short boots with a rip folded design in each side.</p>
+                        </div>
+                        <div class="secondRight">
+                            <p>Powers and Abilities: Superhuman Strength, Enhanced Durability, Unarmed Combatant</p>
+                            <p>Survivalist, Strategist, Storytelling</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="bottom">
+                    <p style="font-size: x-small; text-align: center;">Made by Tima</p>
+                    <pre
+                        style="font-size: x-small; text-align: center;">Stories taken from <a href="#">shrek.fandom.com</a></pre>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
